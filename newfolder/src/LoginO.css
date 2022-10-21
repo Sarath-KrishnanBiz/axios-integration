@@ -1,0 +1,136 @@
+.Login_outer {
+    background-color: #F4F5FA;
+    height: 100vh;
+    min-width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Login_outer_row1 {
+    min-width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Login_outer_row2 {
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.Login_outer_row1_inner {
+    background-color: white;
+    height: 50vh;
+    max-width: 450px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.Login_outer_row1_inner_row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.Login_outer_row1_inner_row2 {
+    padding-top: 5px;
+    margin-left: 30px;
+}
+
+.Login_outer_row1_inner_row3 {
+    margin-left: 30px;
+    color: gray;
+    margin-top: 5px;
+}
+
+.Login_outer_row1_inner_row4,
+.Login_outer_row1_inner_row5 {
+    margin-left: 30px;
+    margin-top: 15px;
+    border: 0.5px solid rgb(203, 197, 197);
+    outline: none;
+    width: 80%;
+    padding: 8px;
+    border-radius: 5px;
+}
+.Login_outer_row1_inner_row4 input,
+.Login_outer_row1_inner_row5 input
+{
+    border: none;
+    outline: none;
+}
+
+.Login_outer_row1_inner_row6,
+.Login_outer_row1_inner_row7 {
+    margin-left: 25px;
+    margin-top: 15px;
+    border: 0.5px solid lightgray;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.Login_outer_row1_inner_row6 {
+    padding-top: 10px;
+    border: none;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding-right: 20px;
+}
+.Login_outer_row1_inner_row6 label{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.Login_outer_row1_inner_row6_left{
+    display: flex;
+    justify-content:left;
+    /* padding-right: 25px; */
+}
+
+.Login_outer_row1_inner_row6_right {
+    color: blueviolet;
+    display: flex;
+    justify-content: right;
+    width: 50%;
+    padding-left: 20px;
+}
+
+
+.Login_outer_row1_inner_row7 {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(149, 41, 250);
+}
+
+.Login_outer_row1_inner_row7 button {
+    background-color: rgb(149, 41, 250);
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.Login_outer_row2 span {
+    color: blue;
+}
+.passwordeye{ 
+    display: flex;
+    justify-content: right;
+    flex-direction: row-reverse;
+    align-content:center;
+
+}

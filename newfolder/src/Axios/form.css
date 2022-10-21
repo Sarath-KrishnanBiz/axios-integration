@@ -1,0 +1,41 @@
+.form_outer {
+    background-color: #faf9f9;
+    padding: 70px;
+    padding-left: 40px;
+    width: 85%;
+    height: 30vh;
+    justify-content: space-between;
+    margin-left: 30px;
+  
+
+  }
+  .form_outer label {
+    font-size: 17px;
+    color: rgb(134, 134, 134);
+  }
+  .form_inner1 {
+    padding: 5px 0px;
+    padding-left: 10px;
+
+  }
+  .form_rectangle {
+    background-color: white;
+    height: 25px;
+    width: 180px;
+    box-shadow: 1px 1px 1px 1px #d1cfcf;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+  .form_inner3 {
+    width: 90%;
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .form_rectangle1{
+    background-color: #f3f3f4;
+    height: 30px;
+    width: 180px;
+  }
