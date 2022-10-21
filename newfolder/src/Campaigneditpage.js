@@ -28,21 +28,23 @@ export default function Campaigneditpage() {
     const [Error4, setError4] = useState("")
     const [Error5, setError5] = useState("")
     const [Error6, setError6] = useState("")
+    const [Error7, setError7] = useState("")
     const [Error, setError] = useState("")
-    const [array, setArray] = useState([]);
+    const [arrayData, setArrayData] = useState([]);
+    
     const handleclick = (e) => {
         setShow(!show)
         const url = "http://localhost:3000/dev/getsinglelead";
-        const data = {"id":"2"};
+        const data = {};
         const Headers = {};
         axios.post(url, data, { Headers: Headers })
             .then((res) => {
-                console.log("Response==>" + JSON.stringify(res.data));
-                for (const temp of res.data) {
-                    temp.isclicked = false
-                }
-                console.log(res.data)
-                setArray(res.data)
+                console.log("Response of array==>" + JSON.stringify(res.data));
+                // for (const temp of res.data) {
+                //     temp.isclicked = false
+                // }
+                setArrayData(res.data)
+                console.log("Array== "+ JSON.stringify(arrayData))
             })
             .catch((err) => {
                 console.log("Error==>" + err);
@@ -61,6 +63,7 @@ export default function Campaigneditpage() {
         setError4("")
         setError5("")
         setError6("")
+        setError7("")
         // const token = localStorage.getItem("tokenvariable");
         const url = "http://localhost:3000/dev/updateCampaign";
         const data = { CampaignName: CampaignName, Startdate: Startdate, Enddate: Enddate, Status: Status, Owner: Owner, ParentCampaign: ParentCampaign, "id": "3" }
@@ -86,7 +89,9 @@ export default function Campaigneditpage() {
                 if (result.includes("ParentCampaign  is mandatory")) {
                     setError6("ParentCampaign  is mandatory")
                 }
-
+                if(result.includes("updated")){
+                    setError7("Updated")
+                }
 
 
 
@@ -94,7 +99,7 @@ export default function Campaigneditpage() {
             .catch((err) => {
                 console.log("Error==> " + err)
             })
-        alert("Updated")
+        // alert("Updated")
     }
 
     useEffect(() => {
@@ -168,6 +173,7 @@ export default function Campaigneditpage() {
                                         <div className="form_inner1">
                                             {/* <label>Lead Details</label> */}
                                         </div>
+                                        <label className="Error7">{Error7}</label>
                                         <div className="form_inner3">
                                             <div className="form_inner31">
                                                 <label className="text">CampaignName</label><br />
@@ -253,9 +259,13 @@ export default function Campaigneditpage() {
                                                 <label>Campaign One</label>
                                             </div>
                                             <div>
-                                                {array.map((itm, indx) => {
+                                                {/* {array.map((itm, indx) => {
                                                     return <List itm={itm} array={array} setArray={setArray} />;
-                                                })}
+                                                })} */}
+                                                {   arrayData.map((item, index)=>{
+                                                    return <List item={item} arrayData={arrayData} setArrayData={setArrayData} />
+                                                })
+                                                }
                                             </div>
                                         </div>
                                     </div>
@@ -265,7 +275,6 @@ export default function Campaigneditpage() {
                             <div className="Campaigneditpage_topbar2_right_2_right">
                                 <Horizontalbar />
                             </div>
-
                         </div>
 
                     </div>
@@ -288,20 +297,21 @@ function Table() {
         </div>
     </>
 }
-function List() {
+function List(item, arrayData, setArrayData) {
 
-    let temp=[...array];
-    for (const iterator of temp) {
-      if(itm.FirstName === iterator.FirstName){
-        iterator.isclicked=!iterator.isclicked;
-      }
-    }
-    setArray(temp)
+    // let temp=[...arrayData];
+    // for (const iterator of temp) {
+    // //   if(itm.FirstName === iterator.FirstName){
+    // //     iterator.isclicked=!iterator.isclicked;
+    // //   }
+    // }
+    // setArrayData(temp)
+    console.log("item"+JSON.stringify(item))
     return (
         <>
             <div className="checkList_inner2">
                 <input type={"checkbox"} className="checkBox" />
-                <label>{itm.FirstName}</label>
+                <label>{item.item.txtFirstName}</label>
             </div>
         </>
     );

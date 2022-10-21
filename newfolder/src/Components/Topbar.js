@@ -23,7 +23,7 @@ export default function Topbar() {
                     <div className="Topbar_icon_circle">
                         <AiOutlineMenu />
 
-                    </div><h3 className="h3">Company</h3>
+                    </div><h3>Company</h3>
 
                 </div>
                 <div className="Topbar_col2" >
@@ -45,7 +45,9 @@ export default function Topbar() {
                 </div>
                 <div className="Topbar_col4">
                     <CgProfile className="Topbar_profileIcon" />
-                    <label className="name">Clayton Santos</label>
+                    <div className="Clayton">
+                    <label>Clayton Santos</label>
+                    </div>
                 </div>
                 <div className="Topbar_col5">
                     <div className="Topbar_Bell_Circle">

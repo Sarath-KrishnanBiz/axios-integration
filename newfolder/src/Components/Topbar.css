@@ -2,8 +2,7 @@ body{
     margin: 0;
 }
 .Topbar_header{
-   
-    background-color: #fafafa;
+    background-color: #f3f3f4;
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -11,7 +10,7 @@ body{
     display: flex;
     flex-direction: row;
 }
-.Topbar_icon_circle,
+
 .Topbar_Bell_Circle,
 .Topbar_cancel_circle{
     background-color: white;
@@ -24,50 +23,59 @@ body{
     flex-direction: row;
     margin-top: 15px;
     margin-left: 10px;
+
     
 }
-
+.Topbar_icon_circle{
+    background-color: white;
+    border-radius: 20px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 16px;
+}
 .Topbar_col1{
     display: flex;
     flex-direction: row;
-    color:  rgba(125, 143, 177);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size:small;
+    color: rgb(113, 123, 151);
+    padding-left: 5px;
+    font-family:Arial, Helvetica, sans-serif;
+
 }
 .Topbar_col1 label{
     padding-left: 60px;
     padding-top: 5px;
-    margin-top: 5px;
-    
-}
-.h3{
-    margin-left: 10px;
-    padding-top: 7px;
-}
-.Topbar_col2 {
-    font-family: Arial, Helvetica, sans-serif;
-    color:  rgba(125, 143, 177);
+    color: rgba(142, 154, 177, 1);
 }
 .Topbar_col2 ul{
     display: flex;
     flex-direction: row;
     margin-left: -30px;
+    color: rgba(142, 154, 177, 1);
+    font-family:Arial, Helvetica, sans-serif;
+
 }
 .Topbar_col2 ul li{
     padding-top: 5px;
-    padding-left: 35px;
+    padding-left: 45px;
     padding-right: 25px;
     list-style-type: none;
 }
-.Topbar_col3{
-    width: 280px;
-    border-radius: 70px;
+.Topbar_col3 {
+    width: 241px;
+    height: 38px;
+    border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: white;
-    margin-right: 10px;
-    color: rgb(203, 203, 206);
+    margin-right: -29px;
+    margin-top: 11px;
 }
 .Topbar_col3 input{
     border: none;
@@ -80,29 +88,23 @@ body{
     width: 170px;
     
 }
-.Topbar_searchIcon{
+.Topbar_searchIcon {
     font-size: 25px;
-    margin-right: 20px;
-    color: rgb(203, 203, 206);
-    
-}
-.Topbar_arrowIcon{
-    color: rgb(203, 203, 206);
+    margin-right: 13px;
+    margin-left: 10px;
+    color: lightgrey;
 }
 .Topbar_col4{
     padding-top: 5px;
-    margin-left: 5px;
+    margin-left: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    color:  rgb(19, 87, 214);
 }
-.Topbar_col4 label{
-    color:  rgba(125, 143, 177);
+.Topbar_profileIcon{
+    color: #b8b8da ;
 }
-.Topbar_profileIcon,
 .Topbar_BellIcon,
 .Topbar_cancelIcon{
-    
-    color: rgb(203, 203, 206);
+    color: #b7c2d7;
 }
 
 .Topbar_profileIcon{
@@ -110,10 +112,11 @@ body{
     font-weight: 50px;
     margin-left: 35px;
     margin-top: 10px;
+    color: #b7c2d7;
 }
-.Topbar_col4 label{
+.Topbar_col4 label {
     margin-left: 10px;
-    font-weight: 100px;
+    color: rgba(142, 154, 177, 1);
 }
 .Topbar_col5{
     padding-top: 3px;
@@ -129,11 +132,8 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-right: 50px;
-    position:absolute;
-    margin-left: 50px;
-    margin-bottom: 21%;
-    
+    margin-right: 200px;
+    position: absolute;
 }
 .Topbar_content_cola{
     background-color: white;
@@ -146,19 +146,20 @@ body{
     border: 1px solid rgb(235, 234, 234);
     display: flex;
     align-items: center;
-    
+    background-color: #f3f3f4;
+    margin-left: -12px;
 }
 .Topbar_content_cola_list label{
     padding-left: 40px;
     padding-top: 10px;
 }
-.Topbar_content_cola_list1{
+.Topbar_content_cola_list1 {
+    background-color: #f3f3f4;
     height: 60px;
-    border: 1px solid  rgb(235, 234, 234);
-
-    margin-right: 20px;
-   width: 292px;
-   
+    border: 1px solid rgb(235, 234, 234);
+    margin-right: 115px;
+    width: 291px;
+    margin-left: -12px;
 }
 .Topbar_content_colb{
     background-color: white;
@@ -213,4 +214,8 @@ body{
 }
 .Topbar_caricon{
       color: #C499FF;
+}
+.Clayton {
+    margin-left: 66px;
+    margin-top: -24px;
 }
