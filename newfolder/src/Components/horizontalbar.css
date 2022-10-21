@@ -1,5 +1,5 @@
 .Horizontalbar_main {
-    background-color: #1333e7;
+    background-color: #F3F3F4;
     /* padding: 50px; */
     padding-left: 30px;
     padding-bottom: 30px;
@@ -59,7 +59,7 @@
 }
 
 .Horizontalbar_graph li {
-    background-color: #e3e4ea;
+    background-color: #F3F3F4;
     display: flex;
     height: 50px;
     /* padding: 5px; */

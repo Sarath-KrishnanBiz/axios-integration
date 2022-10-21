@@ -1,9 +1,9 @@
-import Form from "./Axios/Form";
-import Horizontalbar from "./Axios/Horizontalbar";
-import LeftBar from "./Axios/LeftBar";
-import Normallist from "./Axios/Normallist";
-import TitleBar from "./Axios/titlebar";
-import Topbar from "./Axios/Topbar";
+import Form from "./Components/Form";
+import Horizontalbar from "./Components/Horizontalbar";
+import LeftBar from "./Components/LeftBar";
+import Normallist from "./Components/Normallist";
+import TitleBar from "./Components/titlebar";
+import Topbar from "./Components/Topbar";
 import { BiSearch } from "react-icons/bi";
 import "./Campaigneditpage.css";
 // import "./titlebar.css";
@@ -173,9 +173,9 @@ export default function Campaigneditpage() {
                                         <div className="form_inner1">
                                             {/* <label>Lead Details</label> */}
                                         </div>
-                                        <label className="Error7">{Error7}</label>
                                         <div className="form_inner3">
                                             <div className="form_inner31">
+                                            <label className="Error7">{Error7}</label>
                                                 <label className="text">CampaignName</label><br />
                                                 <input className="form_rectangle" type="text" placeholder="" value={CampaignName} onChange={(e) => { setCampaignName(e.target.value) }} />
                                                 {/* {Error && CampaignName == "" ? <label className="error">Campaign Name is mandatory</label>:""} */}
